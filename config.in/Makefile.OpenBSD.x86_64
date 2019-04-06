@@ -21,7 +21,7 @@ X11_LINK=not found
 LIBBFD_LINK=
 LIBBFD_INCLUDE=
 BYTECC=cc
-BYTECCCOMPOPTS=-O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_THREAD_SAFE
+BYTECCCOMPOPTS=-mretpoline -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_THREAD_SAFE
 BYTECCLINKOPTS= -Wl,-E
 BYTECCLIBS= -lm  -lcurses -pthread                  
 BYTECCRPATH=-Wl,-rpath,
@@ -42,7 +42,7 @@ ARCH=amd64
 MODEL=default
 SYSTEM=openbsd
 NATIVECC=cc
-NATIVECCCOMPOPTS=-O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_THREAD_SAFE
+NATIVECCCOMPOPTS=-mretpoline -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_THREAD_SAFE
 NATIVECCPROFOPTS=
 NATIVECCLINKOPTS=
 NATIVECCRPATH=-Wl,-rpath,
